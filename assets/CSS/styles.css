@@ -7,7 +7,7 @@
 }
 
 .imagen-logo {
-    width: 300px;
+    width: 220px;
 }
 
 * {
@@ -94,7 +94,7 @@
 }
 
 body {
-    padding-top: 85px;
+    padding-top: 110px;
 }
 
 /* Animación para el Header */
