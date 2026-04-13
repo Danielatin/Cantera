@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'AmericanJets-PersonalUsed';
+  src: url('../../fonts/AmericanJetsPersonalUsed.woff') format('woff');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+
+.imagen-logo {
+    width: 300px;
+}
+
+* {
+    font-family: 'AmericanJets-PersonalUsed' !important;    
+}
+
+.bg-gradient {
+    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bg-gradient::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    pointer-events: none;
+}
+
+.imagen-banner {
+    width: 100%;
+    display: block;
+}
+
+.body {
+  font-family: 'AmericanJets-PersonalUsed', sans-serif;
+}
+
+.nav-link {
+    font-family: 'AmericanJets-PersonalUsed', sans-serif;
+    color: black;
+    font-size: 36px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+    color: #444;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0;
+    }
+}
+
+.curve-divider {
+    width: 100%;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.curve-divider-red {
+    height: 80px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1000 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path vector-effect="non-scaling-stroke" d="M -10,30 Q 250,90 500,50 T 1010,30" fill="none" stroke="%23dc3545" stroke-width="8" stroke-linecap="round"/><path vector-effect="non-scaling-stroke" d="M -10,60 Q 350,120 700,30 T 1010,60" fill="none" stroke="%23dc3545" stroke-width="4" opacity="0.8" stroke-linecap="round"/><path vector-effect="non-scaling-stroke" d="M -10,45 Q 150,10 450,70 T 1010,45" fill="none" stroke="%23dc3545" stroke-width="2" opacity="0.5" stroke-linecap="round"/></svg>');
+}
+
+.curve-divider-blue {
+    height: 80px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1000 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path vector-effect="non-scaling-stroke" d="M -10,70 Q 250,10 500,50 T 1010,70" fill="none" stroke="%230dcaf0" stroke-width="8" stroke-linecap="round"/><path vector-effect="non-scaling-stroke" d="M -10,40 Q 350,-20 700,70 T 1010,40" fill="none" stroke="%230dcaf0" stroke-width="4" opacity="0.8" stroke-linecap="round"/><path vector-effect="non-scaling-stroke" d="M -10,55 Q 150,90 450,30 T 1010,55" fill="none" stroke="%230dcaf0" stroke-width="2" opacity="0.5" stroke-linecap="round"/></svg>');
+}
+
+.curve-divider-orange {
+    height: 80px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1000 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path vector-effect="non-scaling-stroke" d="M -10,20 Q 250,100 500,60 T 1010,20" fill="none" stroke="%23fd7e14" stroke-width="8" stroke-linecap="round"/><path vector-effect="non-scaling-stroke" d="M -10,45 Q 350,120 700,40 T 1010,45" fill="none" stroke="%23fd7e14" stroke-width="4" opacity="0.8" stroke-linecap="round"/><path vector-effect="non-scaling-stroke" d="M -10,30 Q 150,-10 450,80 T 1010,30" fill="none" stroke="%23fd7e14" stroke-width="2" opacity="0.5" stroke-linecap="round"/></svg>');
+}
+
+.curve-divider-footer {
+    height: 80px;
+    background-repeat: repeat-x;
+    background-size: 150px 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path vector-effect="non-scaling-stroke" d="M 0,50 Q 12.5,120 25,50 T 50,50 T 75,50 T 100,50" fill="none" stroke="black" stroke-width="7" stroke-linecap="round"/><path vector-effect="non-scaling-stroke" d="M 0,35 Q 12.5,105 25,35 T 50,35 T 75,35 T 100,35" fill="none" stroke="black" stroke-width="2" opacity="0.6" stroke-linecap="round"/></svg>');
+}
+
+body {
+    padding-top: 85px;
+}
+
+/* Animación para el Header */
+header {
+    transition: all 0.4s ease-in-out;
+}
+
+.header-active {
+    animation: slideDown 0.5s ease-out forwards;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15) !important;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

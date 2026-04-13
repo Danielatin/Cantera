@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="assets/CSS/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="fixed-top shadow-sm w-100" style="background-color: #f4f4f4;">
+        <nav class="navbar navbar-expand" style="background-color: #f4f4f4;">
+            <div class="container">
+                <a href="index.html"><img class="imagen-logo navbar-brand" src="./assets/images/Logo.png" alt="Logo"></a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Deportes
+                        </a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="deportes.html">Torneos</a></li>
+                            <li><a class="dropdown-item" href="escuelas.html">Escuelas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn btn-outline-info" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- SECCIÓN SUPERIOR DE LOGOS FLOTANTES -->
+        <section class="position-relative" style="background: url('ball.svg') repeat; background-size: 80px; padding: 50px 0 110px 0;">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-white" style="opacity: 0.95;"></div>
+            <div class="container position-relative z-index-1">
+                <div class="row justify-content-evenly align-items-center">
+                    <div class="col-4 col-md-3 text-center">
+                        <img src="futlog.svg" class="img-fluid" style="height: 140px; filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.25)); color: #dc3545;">
+                    </div>
+                    <div class="col-4 col-md-3 text-center">
+                        <img src="basklog.svg" class="img-fluid" style="height: 140px; filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.25)); color: #fd7e14;">
+                    </div>
+                    <div class="col-4 col-md-3 text-center">
+                        <img src="vollog.svg" class="img-fluid" style="height: 140px; filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.25)); color: #0d6efd;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOQUE 1: AZUL (¿Quienes Somos?) -->
+        <!-- Olas de transición superior -->
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none" style="width: 100%; height: 80px; background: white; margin-top: -60px; position:relative; z-index:2; display: block;">
+            <!-- Trazo superior -->
+            <path vector-effect="non-scaling-stroke" d="M 0,30 Q 250,-10 500,40 T 1000,30" fill="none" stroke="#0d6efd" stroke-width="6" stroke-linecap="round"/>
+            <path vector-effect="non-scaling-stroke" d="M 0,50 Q 250,10 500,60 T 1000,50" fill="none" stroke="#0d6efd" stroke-width="3" opacity="0.6" stroke-linecap="round"/>
+            <!-- Relleno inferior curvado conectando con el fondo -->
+            <path vector-effect="non-scaling-stroke" d="M 0,70 Q 250,30 500,80 T 1000,70 L 1000,100 L 0,100 Z" fill="#0d6efd"/>
+        </svg>
+
+        <section style="background-color: #0d6efd; padding: 20px 0 60px 0;">
+            <div class="container bg-transparent" style="background: transparent !important;">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-md-end text-white pe-md-5 mb-4 mb-md-0 text-center">
+                        <h2 class="display-6 fw-bold fst-italic mb-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3); text-transform: uppercase;">¿Quiénes Somos?</h2>
+                        <p class="fs-5" style="line-height: 1.8;">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.
+                        </p>
+                    </div>
+                    <div class="col-md-6 ps-md-4 px-4 overflow-hidden d-flex justify-content-center">
+                        <img src="assets/images/hero-img.jpg" class="img-fluid shadow-lg" style="border-radius: 60px 20px 60px 20px; height: 350px; width: 100%; max-width: 500px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Olas de transición inferior para el Azul conectando a Blanco -->
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none" style="width: 100%; height: 80px; display: block; background: white; margin-top: -1px;">
+            <!-- Relleno curvado superior conectando con el fondo -->
+            <path vector-effect="non-scaling-stroke" d="M 0,0 L 1000,0 L 1000,30 Q 750,-10 500,40 T 0,30 Z" fill="#0d6efd"/>
+            <!-- Trazos inferiores -->
+            <path vector-effect="non-scaling-stroke" d="M 0,50 Q 750,10 500,60 T 1000,50" fill="none" stroke="#0d6efd" stroke-width="6" stroke-linecap="round"/>
+            <path vector-effect="non-scaling-stroke" d="M 0,70 Q 750,30 500,80 T 1000,70" fill="none" stroke="#0d6efd" stroke-width="3" opacity="0.6" stroke-linecap="round"/>
+        </svg>
+
+        <!-- BLOQUE 2: ROJO (Misión) (Intercalado de lado) -->
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none" style="width: 100%; height: 80px; background: white; display: block;">
+            <path vector-effect="non-scaling-stroke" d="M 0,40 Q 250,90 500,40 T 1000,40" fill="none" stroke="#dc3545" stroke-width="6" stroke-linecap="round"/>
+            <path vector-effect="non-scaling-stroke" d="M 0,60 Q 250,110 500,60 T 1000,60" fill="none" stroke="#dc3545" stroke-width="3" opacity="0.6" stroke-linecap="round"/>
+            <path vector-effect="non-scaling-stroke" d="M 0,80 Q 250,130 500,80 T 1000,80 L 1000,100 L 0,100 Z" fill="#dc3545"/>
+        </svg>
+
+        <section style="background-color: #dc3545; padding: 20px 0 60px 0;">
+            <div class="container bg-transparent" style="background: transparent !important;">
+                <div class="row align-items-center flex-column-reverse flex-md-row">
+                    <div class="col-md-6 pe-md-4 mt-4 mt-md-0 px-4 d-flex justify-content-center">
+                        <img src="assets/images/running.jpg" class="img-fluid shadow-lg" style="border-radius: 20px 60px 20px 60px; height: 350px; width: 100%; max-width: 500px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-6 text-md-start text-white ps-md-5 text-center">
+                        <h2 class="display-6 fw-bold fst-italic mb-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3); text-transform: uppercase;">Misión</h2>
+                        <p class="fs-5" style="line-height: 1.8;">
+                            Nuestra misión es fomentar el deporte y los hábitos saludables en la comunidad, organizando los mejores torneos y dirigiendo escuelas formativas de alto nivel para todas las edades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none" style="width: 100%; height: 80px; display: block; background: white; margin-top: -1px;">
+            <path vector-effect="non-scaling-stroke" d="M 0,0 L 1000,0 L 1000,40 Q 750,90 500,40 T 0,40 Z" fill="#dc3545"/>
+            <path vector-effect="non-scaling-stroke" d="M 0,60 Q 750,110 500,60 T 1000,60" fill="none" stroke="#dc3545" stroke-width="6" stroke-linecap="round"/>
+            <path vector-effect="non-scaling-stroke" d="M 0,80 Q 750,130 500,80 T 1000,80" fill="none" stroke="#dc3545" stroke-width="3" opacity="0.6" stroke-linecap="round"/>
+        </svg>
+
+        <!-- BLOQUE 3: NARANJA (Visión) (Intercalado de lado) -->
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none" style="width: 100%; height: 80px; background: white; display: block;">
+            <path vector-effect="non-scaling-stroke" d="M 0,30 Q 250,-10 500,30 T 1000,30" fill="none" stroke="#fd7e14" stroke-width="6" stroke-linecap="round"/>
+            <path vector-effect="non-scaling-stroke" d="M 0,50 Q 250,10 500,50 T 1000,50" fill="none" stroke="#fd7e14" stroke-width="3" opacity="0.6" stroke-linecap="round"/>
+            <path vector-effect="non-scaling-stroke" d="M 0,70 Q 250,30 500,70 T 1000,70 L 1000,100 L 0,100 Z" fill="#fd7e14"/>
+        </svg>
+
+        <section style="background-color: #fd7e14; padding: 20px 0 60px 0;">
+            <div class="container bg-transparent" style="background: transparent !important;">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-md-end text-white pe-md-5 mb-4 mb-md-0 text-center">
+                        <h2 class="display-6 fw-bold fst-italic mb-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3); text-transform: uppercase;">Visión</h2>
+                        <p class="fs-5" style="line-height: 1.8;">
+                            Ser la institución líder a nivel nacional en la gestión de actividades deportivas, caracterizándonos por nuestro profesionalismo, innovación y compromiso inquebrantable.
+                        </p>
+                    </div>
+                    <div class="col-md-6 ps-md-4 px-4 overflow-hidden d-flex justify-content-center">
+                        <img src="assets/images/hero-img.jpg" class="img-fluid shadow-lg mb-3" style="border-radius: 60px 20px 50px 70px; height: 350px; width: 100%; max-width: 500px; filter: hue-rotate(90deg); object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="curve-divider curve-divider-footer my-0" style="height: 45px; transform: scaleY(0.7);"></div>
+    <footer class="bg-white text-dark py-4">
+        <div class="container-fluid px-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-2">Información Pertinente</h5>
+                    <p class="mb-1">&copy; 2026 Deportes. Todos los derechos reservados.</p>
+                    <p class="mb-0">Email: contacto@deportes.com | Tel: +123 456 7890</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index.html">
+                        <img src="./assets/images/Logo.png" alt="Logo Footer" style="max-width: 200px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            var header = document.querySelector("header");
+            if (window.pageYOffset > 50) {
+                header.classList.add("header-active");
+            } else {
+                header.classList.remove("header-active");
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

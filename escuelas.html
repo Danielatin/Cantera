@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuelas Deportivas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="assets/CSS/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header class="fixed-top shadow-sm w-100" style="background-color: #f4f4f4;">
+        <nav class="navbar navbar-expand" style="background-color: #f4f4f4;">
+            <div class="container">
+                <a href="index.html"><img class="imagen-logo navbar-brand" src="./assets/images/Logo.png" alt="Logo"></a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Deportes
+                        </a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="deportes.html">Torneos</a></li>
+                            <li><a class="dropdown-item" href="escuelas.html">Escuelas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn btn-outline-info" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Íconos de Deportes -->
+        <section class="py-4 bg-white text-center">
+            <div class="container pb-3 mt-3">
+                <div class="row justify-content-center align-items-end g-2 g-md-4">
+                    <div class="col-3 col-md-2" style="position: relative;">
+                        <!-- Pequeño adorno superior (bola del logo) -->
+                        <div style="position: absolute; top: 0; left: 25px; width:10px; height:10px; background-color: #0dcaf0; border-radius: 50%;"></div>
+                        <a href="#escuela-voleibol" class="d-block text-decoration-none" style="transition: transform 0.2s ease-in-out;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="vollog.svg" class="img-fluid" style="height: 100px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
+                            <h4 class="fw-bold mt-2" style="color: #0d6efd;">Voleibol</h4>
+                        </a>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <a href="#escuela-futsal" class="d-block text-decoration-none" style="transition: transform 0.2s ease-in-out;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="futlog.svg" class="img-fluid" style="height: 100px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
+                            <h4 class="fw-bold mt-2 text-danger">Futsal</h4>
+                        </a>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <a href="#escuela-futbol" class="d-block text-decoration-none" style="transition: transform 0.2s ease-in-out;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="logfutb.svg" class="img-fluid" style="height: 100px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
+                            <h4 class="fw-bold mt-2 text-dark">Fútbol</h4>
+                        </a>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <a href="#escuela-baloncesto" class="d-block text-decoration-none" style="transition: transform 0.2s ease-in-out;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="basklog.svg" class="img-fluid" style="height: 100px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
+                            <h4 class="fw-bold mt-2" style="color: #fd7e14;">Baloncesto</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divisor Oscuro -->
+        <div class="curve-divider curve-divider-footer my-0" style="height: 45px; transform: scaleY(0.7);"></div>
+
+        <section class="py-5 bg-white">
+            <div class="container pt-4 pb-5">
+                
+                <!-- Título Escuelas -->
+                <div class="text-center mb-5 pb-5">
+                    <div class="d-inline-block position-relative">
+                        <h1 class="display-4 fw-bold mb-0 px-4" style="text-transform: uppercase; color: #1a1a1a;">Escuelas</h1>
+                        <!-- Simulación de arcos en base a colores protagonistas negro y naranja -->
+                        <svg viewBox="0 0 300 25" width="100%" height="25" class="mt-2" style="max-width: 280px; margin: auto; display: block;">
+                            <path d="M10,10 Q150,25 290,10" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M40,20 Q150,30 260,20" fill="none" stroke="#fd7e14" stroke-width="3" opacity="0.9" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- ================= LISTA DE ESCUELAS (Negro / Naranja) ================= -->
+                
+                <!-- Escuela 1: Marcos Naranja, Blob Negro -->
+                <div id="escuela-futbol" class="row align-items-center mb-5 pb-5 mx-0 mx-md-4" style="scroll-margin-top: 50px;">
+                    <div class="col-md-5 position-relative d-flex justify-content-center mb-4 mb-md-0">
+                        <!-- Arcos Naranjas Laterales -->
+                        <div class="position-absolute" style="top: 15%; left: 0px; height: 70%; width: 25px; border-left: 4px solid #fd7e14; border-top-left-radius: 50%; border-bottom-left-radius: 50%;"></div>
+                        <div class="position-absolute" style="top: 15%; right: 0px; height: 70%; width: 25px; border-right: 4px solid #fd7e14; border-top-right-radius: 50%; border-bottom-right-radius: 50%;"></div>
+                        
+                        <div class="p-2 bg-white shadow-lg mx-3 position-relative" style="border: 6px solid #fd7e14;">
+                            <img src="assets/images/hero-img.jpg" class="img-fluid" style="height: 420px; width: 300px; object-fit: cover; filter: brightness(0.6) grayscale(70%);">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 p-4 text-start d-flex flex-column" style="background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8));">
+                                <h2 class="text-white fw-bold fst-italic" style="font-size: 2.2rem; text-shadow: 2px 2px 4px #000;">ESCUELA DE<br>FÚTBOL</h2>
+                                <h3 class="text-warning fw-bold mt-auto text-end" style="text-shadow: 2px 2px 4px #000;">FORMATIVA</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 ps-md-4 d-flex justify-content-center">
+                        <div class="p-4 p-md-5 text-white shadow-lg text-center" style="background-color: #1a1a1a; border-radius: 60px 20px 80px 30px / 50px 70px 40px 60px; max-width: 480px; width: 100%;">
+                            <h4 class="fw-bold text-uppercase fst-italic mb-3 text-warning" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.3); border-bottom: 2px solid white; padding-bottom: 15px; display: inline-block;">Nombre de la Escuela</h4>
+                            <p class="fs-5 mb-3" style="font-size: 1.1rem; color: #ffebcc;">Inscripciones: <br><span class="fw-bold text-white">(fechas de ingreso anual)</span></p>
+                            <p class="fs-5 mb-3" style="font-size: 1.1rem; color: #ffebcc;">Categoría: <br><span class="fw-bold text-white">(desde 6 años en adelante)</span></p>
+                            <p class="fs-5 mb-0" style="font-size: 1.1rem; color: #ffebcc;">Contacto: <br><span class="fw-bold text-white">(Redes sociales)</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Escuela 2: Marcos Negros, Blob Naranja -->
+                <div id="escuela-futsal" class="row align-items-center mb-5 pb-5 mx-0 mx-md-4 flex-column-reverse flex-md-row" style="scroll-margin-top: 50px;">
+                    <div class="col-md-7 pe-md-4 d-flex justify-content-center mb-4 mb-md-0">
+                        <div class="p-4 p-md-5 text-white shadow-lg text-center" style="background-color: #fd7e14; border-radius: 30px 60px 40px 80px / 70px 40px 60px 50px; max-width: 480px; width: 100%;">
+                            <h4 class="fw-bold text-uppercase fst-italic mb-3 text-dark" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.3); border-bottom: 2px solid #1a1a1a; padding-bottom: 15px; display: inline-block;">Nombre de la Escuela</h4>
+                            <p class="fs-5 mb-3 text-dark" style="font-size: 1.1rem;">Inscripciones: <br><span class="fw-bold text-white">(fechas de ingreso anual)</span></p>
+                            <p class="fs-5 mb-3 text-dark" style="font-size: 1.1rem;">Categoría: <br><span class="fw-bold text-white">(desde 6 años en adelante)</span></p>
+                            <p class="fs-5 mb-0 text-dark" style="font-size: 1.1rem;">Contacto: <br><span class="fw-bold text-white">(Redes sociales)</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 position-relative d-flex justify-content-center">
+                        <div class="position-absolute" style="top: 15%; left: 0px; height: 70%; width: 25px; border-left: 4px solid #1a1a1a; border-top-left-radius: 50%; border-bottom-left-radius: 50%;"></div>
+                        <div class="position-absolute" style="top: 15%; right: 0px; height: 70%; width: 25px; border-right: 4px solid #1a1a1a; border-top-right-radius: 50%; border-bottom-right-radius: 50%;"></div>
+                        
+                        <div class="p-2 bg-white shadow-lg mx-3 position-relative" style="border: 6px solid #1a1a1a;">
+                            <img src="assets/images/running.jpg" class="img-fluid" style="height: 420px; width: 300px; object-fit: cover; filter: sepia(0.8) hue-rotate(-20deg) brightness(0.9);">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 p-4 text-start d-flex flex-column" style="background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8));">
+                                <h2 class="text-white fw-bold fst-italic" style="font-size: 2.2rem; text-shadow: 2px 2px 4px #000;">ESCUELA DE<br>FUTSAL</h2>
+                                <h3 class="text-warning fw-bold mt-auto text-end" style="text-shadow: 2px 2px 4px #000;">PROFESIONAL</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Escuela 3: Marcos Naranja, Blob Negro -->
+                <div id="escuela-baloncesto" class="row align-items-center mb-5 pb-5 mx-0 mx-md-4" style="scroll-margin-top: 50px;">
+                    <div class="col-md-5 position-relative d-flex justify-content-center mb-4 mb-md-0">
+                        <div class="position-absolute" style="top: 15%; left: 0px; height: 70%; width: 25px; border-left: 4px solid #fd7e14; border-top-left-radius: 50%; border-bottom-left-radius: 50%;"></div>
+                        <div class="position-absolute" style="top: 15%; right: 0px; height: 70%; width: 25px; border-right: 4px solid #fd7e14; border-top-right-radius: 50%; border-bottom-right-radius: 50%;"></div>
+                        
+                        <div class="p-2 bg-white shadow-lg mx-3 position-relative" style="border: 6px solid #fd7e14;">
+                            <img src="assets/images/hero-img.jpg" class="img-fluid" style="height: 420px; width: 300px; object-fit: cover; filter: grayscale(100%);">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 p-4 text-start d-flex flex-column" style="background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8));">
+                                <h2 class="text-white fw-bold fst-italic" style="font-size: 2.2rem; text-shadow: 2px 2px 4px #000;">ESCUELA DE<br>BÁSQUET</h2>
+                                <h3 class="text-warning fw-bold mt-auto text-end" style="text-shadow: 2px 2px 4px #000;">FORMATIVA</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 ps-md-4 d-flex justify-content-center">
+                        <div class="p-4 p-md-5 text-white shadow-lg text-center" style="background-color: #1a1a1a; border-radius: 80px 30px 40px 60px / 50px 80px 30px 70px; max-width: 480px; width: 100%;">
+                            <h4 class="fw-bold text-uppercase fst-italic mb-3 text-warning" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.3); border-bottom: 2px solid white; padding-bottom: 15px; display: inline-block;">Nombre de la Escuela</h4>
+                            <p class="fs-5 mb-3" style="font-size: 1.1rem; color: #ffebcc;">Inscripciones: <br><span class="fw-bold text-white">(fechas de ingreso anual)</span></p>
+                            <p class="fs-5 mb-3" style="font-size: 1.1rem; color: #ffebcc;">Categoría: <br><span class="fw-bold text-white">(desde 6 años en adelante)</span></p>
+                            <p class="fs-5 mb-0" style="font-size: 1.1rem; color: #ffebcc;">Contacto: <br><span class="fw-bold text-white">(Redes sociales)</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Escuela 4: Marcos Negros, Blob Naranja -->
+                <div id="escuela-voleibol" class="row align-items-center mx-0 mx-md-4 flex-column-reverse flex-md-row" style="scroll-margin-top: 50px;">
+                    <div class="col-md-7 pe-md-4 d-flex justify-content-center mb-4 mb-md-0">
+                        <div class="p-4 p-md-5 text-white shadow-lg text-center" style="background-color: #fd7e14; border-radius: 30px 70px 50px 20px / 60px 40px 80px 40px; max-width: 480px; width: 100%;">
+                            <h4 class="fw-bold text-uppercase fst-italic mb-3 text-dark" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.3); border-bottom: 2px solid #1a1a1a; padding-bottom: 15px; display: inline-block;">Nombre de la Escuela</h4>
+                            <p class="fs-5 mb-3 text-dark" style="font-size: 1.1rem;">Inscripciones: <br><span class="fw-bold text-white">(fechas de ingreso anual)</span></p>
+                            <p class="fs-5 mb-3 text-dark" style="font-size: 1.1rem;">Categoría: <br><span class="fw-bold text-white">(desde 6 años en adelante)</span></p>
+                            <p class="fs-5 mb-0 text-dark" style="font-size: 1.1rem;">Contacto: <br><span class="fw-bold text-white">(Redes sociales)</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 position-relative d-flex justify-content-center">
+                        <div class="position-absolute" style="top: 15%; left: 0px; height: 70%; width: 25px; border-left: 4px solid #1a1a1a; border-top-left-radius: 50%; border-bottom-left-radius: 50%;"></div>
+                        <div class="position-absolute" style="top: 15%; right: 0px; height: 70%; width: 25px; border-right: 4px solid #1a1a1a; border-top-right-radius: 50%; border-bottom-right-radius: 50%;"></div>
+                        
+                        <div class="p-2 bg-white shadow-lg mx-3 position-relative" style="border: 6px solid #1a1a1a;">
+                            <img src="assets/images/running.jpg" class="img-fluid" style="height: 420px; width: 300px; object-fit: cover; filter: sepia(0.8) hue-rotate(-20deg) brightness(0.9);">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 p-4 text-start d-flex flex-column" style="background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8));">
+                                <h2 class="text-white fw-bold fst-italic" style="font-size: 2.2rem; text-shadow: 2px 2px 4px #000;">ESCUELA DE<br>VOLEIBOL</h2>
+                                <h3 class="text-warning fw-bold mt-auto text-end" style="text-shadow: 2px 2px 4px #000;">COMPETITIVA</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="curve-divider curve-divider-orange my-0"></div>
+    <footer class="bg-white text-dark py-4">
+        <div class="container-fluid px-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-2">Información Pertinente</h5>
+                    <p class="mb-1">&copy; 2026 Deportes. Todos los derechos reservados.</p>
+                    <p class="mb-0">Email: contacto@deportes.com | Tel: +123 456 7890</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index.html">
+                        <img src="./assets/images/Logo.png" alt="Logo Footer" style="max-width: 200px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            var header = document.querySelector("header");
+            if (window.pageYOffset > 50) {
+                header.classList.add("header-active");
+            } else {
+                header.classList.remove("header-active");
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

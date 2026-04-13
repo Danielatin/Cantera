@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="assets/CSS/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <header class="fixed-top shadow-sm w-100" style="background-color: #f4f4f4;">
+        <nav class="navbar navbar-expand" style="background-color: #f4f4f4;">
+            <div class="container">
+                <a href="index.html"><img class="imagen-logo navbar-brand" src="./assets/images/Logo.png" alt="Logo"></a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Deportes
+                        </a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="deportes.html">Torneos</a></li>
+                            <li><a class="dropdown-item" href="escuelas.html">Escuelas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn btn-outline-info" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main style="background-color: #f4f4f4;">
+        <!-- SECCIÓN SUPERIOR DE LOGOS FLOTANTES -->
+        <section class="position-relative" style="background: url('ball.svg') repeat; background-size: 80px; padding: 50px 0 60px 0;">
+            <!-- Overlay para atenuar el patrón en la parte superior -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: #f4f4f4; opacity: 0.95;"></div>
+            <div class="container position-relative z-index-1">
+                <div class="row justify-content-evenly align-items-center">
+                    <div class="col-4 col-md-3 text-center">
+                        <img src="futlog.svg" class="img-fluid" style="height: 140px; filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.25)); color: #dc3545;">
+                    </div>
+                    <div class="col-4 col-md-3 text-center">
+                        <img src="basklog.svg" class="img-fluid" style="height: 140px; filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.25)); color: #d27827;">
+                    </div>
+                    <div class="col-4 col-md-3 text-center">
+                        <img src="vollog.svg" class="img-fluid" style="height: 140px; filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.25)); color: #0d6efd;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Olas de transición superior (Naranja oscuro / Bronce) -->
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none" style="width: 100%; height: 60px; background: #f4f4f4; margin-top: -20px; position:relative; z-index:2; display: block;">
+            <!-- Pequeños trazos sueltos centrales-->
+            <path vector-effect="non-scaling-stroke" d="M 400,15 Q 500,0 600,15" fill="none" stroke="#d27827" stroke-width="5" stroke-linecap="round"/>
+            <path vector-effect="non-scaling-stroke" d="M 430,35 Q 500,20 570,35" fill="none" stroke="#d27827" stroke-width="2.5" stroke-linecap="round"/>
+            
+            <!-- Trazos sueltos derechos -->
+            <path vector-effect="non-scaling-stroke" d="M 800,45 Q 850,35 900,45" fill="none" stroke="#d27827" stroke-width="4" stroke-linecap="round"/>
+            <path vector-effect="non-scaling-stroke" d="M 820,60 Q 850,50 880,60" fill="none" stroke="#d27827" stroke-width="1.5" stroke-linecap="round"/>
+
+            <!-- Relleno principal de la ola inferior -->
+            <path vector-effect="non-scaling-stroke" d="M 0,65 Q 250,30 500,70 T 1000,50 L 1000,100 L 0,100 Z" fill="#d27827"/>
+        </svg>
+
+        <!-- BANNER DE CONTACTO (Naranja oscuro) -->
+        <section style="background-color: #d27827; padding: 40px 0 60px 0;">
+            <div class="container bg-transparent text-center text-white" style="background: transparent !important;">
+                <h2 class="display-6 fw-bold fst-italic mb-5" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2); text-transform: uppercase;">
+                    SE PARTE DEL MOVIMIENTO DEPORTIVO DE<br>SOACHA.
+                </h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-9 col-lg-8">
+                        <p class="fs-5" style="line-height: 1.6; font-family: 'Segoe UI', Arial, sans-serif !important; font-weight: 500;">
+                            ¿Tienes una idea, propuesta o quieres ser parte de Cantera?<br>
+                            Tu mensaje puede impulsar nuevas oportunidades, alianzas o historias deportivas.<br>
+                            Completa el formulario y únete al movimiento que transforma el deporte en comunidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Olas de transición inferior (Naranja oscuro a Blanco) -->
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none" style="width: 100%; height: 60px; display: block; background: #f4f4f4; margin-top: -1px;">
+            <!-- Parte solida conectada arriba -->
+            <path vector-effect="non-scaling-stroke" d="M 0,0 L 1000,0 L 1000,40 Q 750,-10 500,40 T 0,30 Z" fill="#d27827"/>
+            
+            <!-- Trazos sueltos inferior izquierda -->
+            <path vector-effect="non-scaling-stroke" d="M 250,55 Q 320,70 390,55" fill="none" stroke="#d27827" stroke-width="5" stroke-linecap="round"/>
+            <path vector-effect="non-scaling-stroke" d="M 270,75 Q 320,85 370,75" fill="none" stroke="#d27827" stroke-width="2.5" stroke-linecap="round"/>
+
+            <!-- Trazos sueltos inferior derecha -->
+            <path vector-effect="non-scaling-stroke" d="M 800,50 Q 860,70 920,50" fill="none" stroke="#d27827" stroke-width="4" stroke-linecap="round"/>
+            <path vector-effect="non-scaling-stroke" d="M 820,70 Q 860,85 900,70" fill="none" stroke="#d27827" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+
+        <!-- SECCIÓN DE INFORMACIÓN DE CONTACTO -->
+        <section class="position-relative" style="background: url('ball.svg') repeat; background-size: 80px; padding: 60px 0 100px 0;">
+            <!-- Overlay blanco hueso para atenuar el patrón -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: #f4f4f4; opacity: 0.95;"></div>
+            
+            <div class="container position-relative z-index-1 text-center">
+                <h2 class="fw-bold fst-italic mb-3" style="text-transform: uppercase; font-size: 1.8rem; letter-spacing: 1px;">
+                    INFORMACIÓN DE CONTACTO
+                </h2>
+
+                <!-- CONTENEDOR CENTRAL CON WATERMARK GIGANTE -->
+                <div class="position-relative mx-auto" style="max-width: 600px; padding: 60px 20px;">
+                    <!-- Watermark de la esfera central -->
+                    <div class="position-absolute top-50 start-50 translate-middle w-100 h-100" style="background: url('ball.svg') no-repeat center center; background-size: contain; opacity: 0.35; z-index: 0; min-height: 400px;"></div>
+                    
+                    <div class="position-relative z-index-1 mb-5">
+                        <h4 class="fw-bold fst-italic mb-4" style="text-transform: uppercase; font-size: 1.4rem;">REDES SOCIALES</h4>
+                        <div class="d-flex flex-column align-items-center gap-2 mt-3">
+                            <a href="#" class="text-dark text-decoration-none fs-5 d-flex align-items-center" style="font-family: 'Segoe UI', Arial, sans-serif !important; font-weight: 700;">
+                                <i class="bi bi-facebook fs-4 me-2"></i> Facebook
+                            </a>
+                            <a href="#" class="text-dark text-decoration-none fs-5 d-flex align-items-center" style="font-family: 'Segoe UI', Arial, sans-serif !important; font-weight: 700;">
+                                <i class="bi bi-instagram fs-4 me-2"></i> Instagram
+                            </a>
+                            <a href="#" class="text-dark text-decoration-none fs-5 d-flex align-items-center" style="font-family: 'Segoe UI', Arial, sans-serif !important; font-weight: 700;">
+                                <i class="bi bi-tiktok fs-4 me-2"></i> TikTok
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="position-relative z-index-1 mt-5">
+                        <h4 class="fw-bold fst-italic mb-4" style="text-transform: uppercase; font-size: 1.4rem;">CONTACTO DIRECTO</h4>
+                        <div class="d-flex flex-column align-items-center gap-3 mt-3">
+                            <p class="mb-0 fs-5 text-dark" style="font-family: 'Segoe UI', Arial, sans-serif !important; font-weight: 600;">
+                                Correo electrónico: contacto@cantera.co
+                            </p>
+                            <p class="mb-0 fs-5 text-dark d-flex align-items-center" style="font-family: 'Segoe UI', Arial, sans-serif !important; font-weight: 600;">
+                                Número de contacto: <i class="bi bi-whatsapp fs-4 mx-2"></i> 301 8318624
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="curve-divider curve-divider-footer my-0" style="height: 45px; transform: scaleY(0.7); background-color: #f4f4f4;"></div>
+    <footer class="text-dark py-4" style="background-color: #f4f4f4;">
+        <div class="container-fluid px-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-2">Información Pertinente</h5>
+                    <p class="mb-1">&copy; 2026 Deportes. Todos los derechos reservados.</p>
+                    <p class="mb-0">Email: contacto@deportes.com | Tel: +123 456 7890</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index.html">
+                        <img src="./assets/images/Logo.png" alt="Logo Footer" style="max-width: 200px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            var header = document.querySelector("header");
+            if (window.pageYOffset > 50) {
+                header.classList.add("header-active");
+            } else {
+                header.classList.remove("header-active");
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

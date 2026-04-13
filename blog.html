@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="assets/CSS/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header class="fixed-top shadow-sm w-100" style="background-color: #f4f4f4;">
+        <nav class="navbar navbar-expand" style="background-color: #f4f4f4;">
+            <div class="container">
+                <a href="index.html"><img class="imagen-logo navbar-brand" src="./assets/images/Logo.png" alt="Logo"></a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Deportes
+                        </a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="deportes.html">Torneos</a></li>
+                            <li><a class="dropdown-item" href="escuelas.html">Escuelas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn btn-outline-info" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Banner Carousel Interactivo -->
+        <section id="blog-banner" class="d-none d-md-block" style="border-bottom: 4px solid #f9fafb;">
+            <div id="blogCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                
+                <!-- Indicadores y Controles inferiores simulando el diseño previo -->
+                <div class="carousel-indicators align-items-center shadow-lg" style="background-color: #1a1a1a; border-radius: 30px; padding: 12px 30px; margin-bottom: 20px; border-bottom: 2px solid #555;">
+                    <!-- Botón falso de detener y su estilo -->
+                    <div class="text-white text-uppercase d-flex align-items-center me-4" style="font-size: 0.8rem; letter-spacing: 2px;" data-bs-target="#blogCarousel" data-bs-slide="pause" style="cursor: pointer;">
+                        <span class="fst-italic me-2 fw-bold" style="cursor:pointer;" onclick="var c=bootstrap.Carousel.getInstance(document.getElementById('blogCarousel')); c.pause();">Detener</span>
+                        <div class="bg-white" style="width: 10px; height: 10px; cursor:pointer;" onclick="var c=bootstrap.Carousel.getInstance(document.getElementById('blogCarousel')); c.pause();"></div>
+                    </div>
+                    <!-- Puntos de slide interactivos -->
+                    <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="width: 16px; height: 16px; border-radius: 50%; border: none; margin: 0 6px;"></button>
+                    <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="1" aria-label="Slide 2" style="width: 16px; height: 16px; border-radius: 50%; border: none; margin: 0 6px;"></button>
+                    <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="2" aria-label="Slide 3" style="width: 16px; height: 16px; border-radius: 50%; border: none; margin: 0 6px;"></button>
+                </div>
+
+                <!-- Imágenes del Carrusel (Sin texto) -->
+                <div class="carousel-inner" style="height: 480px;">
+                    <div class="carousel-item active h-100">
+                        <img src="assets/images/hero-img.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="Banner 1">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="assets/images/running.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="Banner 2">
+                    </div>
+                    <div class="carousel-item h-100 bg-dark d-flex align-items-center justify-content-center">
+                        <img src="ball.svg" class="d-block w-100 h-100" style="object-fit: cover; opacity: 0.5;" alt="Banner 3">
+                    </div>
+                </div>
+
+                <!-- Controles interactivos laterales -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: drop-shadow(0 0 5px rgba(0,0,0,0.8));"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: drop-shadow(0 0 5px rgba(0,0,0,0.8));"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Título principal -->
+        <section class="pt-5 pb-4" style="border-bottom: 2px solid #d1d5db; background-color: #fbfbfb;">
+            <div class="container text-center py-4">
+                <h2 class="fw-bold" style="font-size: 2.6rem;">Toda la actualidad del <span class="text-danger">deporte local</span> en un<br>solo lugar.</h2>
+            </div>
+        </section>
+
+        <!-- Bloques de Blog intercalados -->
+        <section class="py-5 bg-white">
+            <div class="container py-3">
+
+                <!-- Bloque 1 (Izquierda: Imagen, Derecha: Texto) -->
+                <div class="row align-items-center mb-5 pb-5">
+                    <div class="col-md-5 mb-4 mb-md-0 position-relative">
+                        <!-- Líneas curvas decorativas simuladas en CSS -->
+                        <div class="position-absolute" style="top:-18px; right:-18px; width: 70px; height: 70px; border-top: 3px solid #dc3545; border-right: 3px solid #dc3545; border-top-right-radius: 20px;"></div>
+                        <div class="position-absolute" style="top:-8px; right:-8px; width: 45px; height: 45px; border-top: 2px solid #dc3545; border-right: 2px solid #dc3545; border-top-right-radius: 12px;"></div>
+                        <div class="position-absolute" style="bottom:-18px; left:-18px; width: 70px; height: 70px; border-bottom: 3px solid #dc3545; border-left: 3px solid #dc3545; border-bottom-left-radius: 20px;"></div>
+                        <div class="position-absolute" style="bottom:-8px; left:-8px; width: 45px; height: 45px; border-bottom: 2px solid #dc3545; border-left: 2px solid #dc3545; border-bottom-left-radius: 12px;"></div>
+                        
+                        <div class="rounded-4 overflow-hidden position-relative shadow" style="border: 4px solid #dc3545; z-index: 1;">
+                            <img src="assets/images/running.jpg" class="img-fluid w-100" style="object-fit: cover; height: 280px; filter: grayscale(20%);">
+                            <div class="position-absolute bottom-0 start-0 p-3 w-100" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                                <h2 class="text-white fw-bold fst-italic mb-0" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">LOS MEJORES<br>GOLAZOS</h2>
+                                <small class="text-success fw-bold d-block mt-1">TORNEO DEL BARRIO - 8VA EDICIÓN</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 ps-md-5">
+                        <p class="fs-4 text-dark opacity-75" style="line-height: 1.5; font-family: sans-serif;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+
+                <hr class="text-muted opacity-25">
+
+                <!-- Bloque 2 (Izquierda: Texto, Derecha: Imagen) -->
+                <div class="row align-items-center my-5 py-5 flex-column-reverse flex-md-row">
+                    <div class="col-md-7 pe-md-5 mb-4 mb-md-0 text-md-end">
+                        <p class="fs-4 text-dark opacity-75" style="line-height: 1.5; font-family: sans-serif;">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                    </div>
+                    <div class="col-md-5 position-relative">
+                        <!-- Esquinas invertidas: top-left & bottom-right -->
+                        <div class="position-absolute" style="top:-18px; left:-18px; width: 70px; height: 70px; border-top: 3px solid #dc3545; border-left: 3px solid #dc3545; border-top-left-radius: 20px;"></div>
+                        <div class="position-absolute" style="top:-8px; left:-8px; width: 45px; height: 45px; border-top: 2px solid #dc3545; border-left: 2px solid #dc3545; border-top-left-radius: 12px;"></div>
+                        <div class="position-absolute" style="bottom:-18px; right:-18px; width: 70px; height: 70px; border-bottom: 3px solid #dc3545; border-right: 3px solid #dc3545; border-bottom-right-radius: 20px;"></div>
+                        <div class="position-absolute" style="bottom:-8px; right:-8px; width: 45px; height: 45px; border-bottom: 2px solid #dc3545; border-right: 2px solid #dc3545; border-bottom-right-radius: 12px;"></div>
+                        
+                        <div class="rounded-4 overflow-hidden position-relative shadow" style="border: 4px solid #dc3545; z-index: 1;">
+                            <img src="assets/images/hero-img.jpg" class="img-fluid w-100" style="object-fit: cover; height: 280px; filter: grayscale(20%);">
+                            <div class="position-absolute bottom-0 start-0 p-3 w-100" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                                <h2 class="text-white fw-bold fst-italic mb-0" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">MÁXIMA<br>VELOCIDAD</h2>
+                                <small class="text-warning fw-bold d-block mt-1">LIGA FUTSAL NACIONAL</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="text-muted opacity-25">
+
+                <!-- Bloque 3 (Izquierda: Imagen, Derecha: Texto) -->
+                <div class="row align-items-center mt-5 pt-5">
+                    <div class="col-md-5 mb-4 mb-md-0 position-relative">
+                        <!-- Curvas decorativas top-right y bottom-left de nuevo -->
+                        <div class="position-absolute" style="top:-18px; right:-18px; width: 70px; height: 70px; border-top: 3px solid #dc3545; border-right: 3px solid #dc3545; border-top-right-radius: 20px;"></div>
+                        <div class="position-absolute" style="top:-8px; right:-8px; width: 45px; height: 45px; border-top: 2px solid #dc3545; border-right: 2px solid #dc3545; border-top-right-radius: 12px;"></div>
+                        <div class="position-absolute" style="bottom:-18px; left:-18px; width: 70px; height: 70px; border-bottom: 3px solid #dc3545; border-left: 3px solid #dc3545; border-bottom-left-radius: 20px;"></div>
+                        <div class="position-absolute" style="bottom:-8px; left:-8px; width: 45px; height: 45px; border-bottom: 2px solid #dc3545; border-left: 2px solid #dc3545; border-bottom-left-radius: 12px;"></div>
+                        
+                        <div class="rounded-4 overflow-hidden position-relative shadow" style="border: 4px solid #dc3545; z-index: 1;">
+                            <img src="assets/images/running.jpg" class="img-fluid w-100" style="object-fit: cover; height: 280px; filter: grayscale(20%);">
+                            <div class="position-absolute bottom-0 start-0 p-3 w-100" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                                <h2 class="text-white fw-bold fst-italic mb-0" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">TIPS DE<br>ENTRENAMIENTO</h2>
+                                <small class="text-info fw-bold d-block mt-1">NUTRICIÓN Y DEPORTE EFICAZ</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 ps-md-5">
+                        <p class="fs-4 text-dark opacity-75" style="line-height: 1.5; font-family: sans-serif;">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="curve-divider curve-divider-footer mt-5"></div>
+    <footer class="bg-white text-dark py-4">
+        <div class="container-fluid px-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-2">Información Pertinente</h5>
+                    <p class="mb-1">&copy; 2026 Deportes. Todos los derechos reservados.</p>
+                    <p class="mb-0">Email: contacto@deportes.com | Tel: +123 456 7890</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index.html">
+                        <img src="./assets/images/Logo.png" alt="Logo Footer" style="max-width: 200px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            var header = document.querySelector("header");
+            if (window.pageYOffset > 50) {
+                header.classList.add("header-active");
+            } else {
+                header.classList.remove("header-active");
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
